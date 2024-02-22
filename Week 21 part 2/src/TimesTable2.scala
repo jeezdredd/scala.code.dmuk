@@ -22,6 +22,6 @@
         print("\n")
         row += 1
       }
-
+ //commended struct
     }
   }
