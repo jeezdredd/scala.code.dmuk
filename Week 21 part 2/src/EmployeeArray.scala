@@ -25,11 +25,9 @@ object EmployeeArray {
     salaryEmp += 250.300
     salaryEmp += 12.300
 
-
     var choice: Int = 0
 
     while (choice != 5) {
-
 
       println("|=============================================|")
       println("|=============Employee Management=============|")
@@ -111,7 +109,7 @@ object EmployeeArray {
             println("Employee designation: " + designEmp(ssidSearch))
             println("Employee salary: " + salaryEmp(ssidSearch))
           } else {
-            print("Incorrect data. Search another employee.")
+            print("\nIncorrect data. Search another employee.\n")
           }
 
         case 4 =>
@@ -147,7 +145,6 @@ object EmployeeArray {
         case 5 => println("Exiting...")
         case _ => println("Invalid choice. Try again.")
       }
-
     }
 
     println("\n Good Bye! Thank you.")
