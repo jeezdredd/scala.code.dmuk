@@ -104,7 +104,7 @@ object EmployeeArray {
 
           print("Searching...")
 
-          if (ssidSearch <= 1000) {
+          if (ssidSearch == ssidEmp.min && ssidSearch == ssidEmp.max) {
             println("Found! ")
             println("Employee name: " + nameEmp(ssidSearch))
             println("Employee SSID: " + ssidSearch)
