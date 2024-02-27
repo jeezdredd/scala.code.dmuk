@@ -18,7 +18,7 @@ object EmployeeArray {
 
     var choice: Int = 0
 
-    println("Welcome!")
+    println("|===================Welcome!==================|")
     while (choice != 5) {
 
       println("|=============================================|")
@@ -56,6 +56,7 @@ object EmployeeArray {
 
         case 2 =>
           print("What record of an employee you would like to delete? \n1. Name \n2. SSID \n3. Designation \n4. Salary \n")
+          print("Choose option: ")
           var choice2 = readInt()
 
           if (choice2 == 1) {
@@ -69,7 +70,7 @@ object EmployeeArray {
             var ssid = readInt()
             ssidEmp -= (ssid)
 
-            print(f"Employee SSID $ssid associated with " + nameEmp(ssid) + " has been deleted\n")
+            print(f"Employee SSID $ssid associated with user \"" + nameEmp(ssid) + "\" has been deleted\n")
           } else if (choice == 3) {
             print("Type in Designation: ")
             var designation = readLine()
