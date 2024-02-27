@@ -71,27 +71,27 @@ object EmployeeArray {
             var name = readLine()
             nameEmp -= (name)
 
-            print(s"Employee $name has been deleted")
+            print(s"Employee $name has been deleted\n")
           } else if (choice == 2) {
             print("Type in Employee SSID: ")
             var ssid = readInt()
             ssidEmp -= (ssid)
 
-            print(f"Employee SSID $ssid has been deleted")
+            print(f"Employee SSID $ssid has been deleted\n")
           } else if (choice == 3) {
             print("Type in Designation: ")
             var designation = readLine()
 
             designEmp -= (designation)
 
-            print(f"Employee $designation has been deleted")
+            print(f"Employee $designation has been deleted\n")
           } else if (choice == 4) {
             print("Type in Salary: ")
             var salary = readFloat()
 
             salaryEmp -= (salary)
 
-            print(s"Employee salary of $salary has been deleted")
+            print(s"Employee salary of $salary has been deleted\n")
           } else {
             print("Invalid choice. Try again.")
           }
@@ -114,33 +114,17 @@ object EmployeeArray {
 
         case 4 =>
           print("Designation salary calculator.\n")
-          print("Enter your designation to calculate: ")
-          var calcDes = readLine()
+          print("Enter your base salary (/h): ")
+          var baseSalary = readInt()
+          print("\nEnter your monthly working hours: ")
+          var workingHours = readInt()
+          var totalSalary = baseSalary * workingHours / 2
+          print(s"\nYour total amount to be paid monthly (no tax) is: $totalSalary")
+          print("\nEnter your country tax rate (without %): ")
+          var taxRate = readInt()
+          var totalTaxSalary = totalSalary - (totalSalary * taxRate / 100)
+          print(s"\nYour total amount to be paid (with tax) is: $totalTaxSalary\n")
 
-          val work1: String = "Designer"
-          val work2: String = "Manager"
-          val work3: String = "Director"
-          val work4: String = "Cleaner"
-
-          if (calcDes == work1) {
-            val result = 2000 * 100 / 20
-
-            println(s"\nYour salary on $work1 position is: $result" + "$k\\py")
-          } else if (calcDes == work2) {
-            val result = 1500 * 100 / 20
-
-            println(s"\nYour salary on $work2 position is: $result" + "$k\\py")
-          } else if (calcDes == work3) {
-            val result = 5000 * 100 / 20
-
-            println(s"\nYour salary on $work3 position is: $result" + "$k\\py")
-          } else if (calcDes == work4) {
-            val result = 500 * 100 / 20
-
-            println(s"\nYour salary on work $work4 position is: $result" + "$k\\py")
-          } else {
-            print("Incorrect designation. Try again.")
-          }
 
         case 5 => println("Exiting...")
         case _ => println("Invalid choice. Try again.")
