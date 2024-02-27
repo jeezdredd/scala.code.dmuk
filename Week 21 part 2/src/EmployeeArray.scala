@@ -18,6 +18,7 @@ object EmployeeArray {
 
     var choice: Int = 0
 
+    println("Welcome!")
     while (choice != 5) {
 
       println("|=============================================|")
@@ -68,7 +69,7 @@ object EmployeeArray {
             var ssid = readInt()
             ssidEmp -= (ssid)
 
-            print(f"Employee SSID $ssid has been deleted\n")
+            print(f"Employee SSID $ssid associated with " + nameEmp(ssid) + " has been deleted\n")
           } else if (choice == 3) {
             print("Type in Designation: ")
             var designation = readLine()
