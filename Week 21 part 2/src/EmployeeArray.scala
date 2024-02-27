@@ -5,25 +5,16 @@ object EmployeeArray {
   def main(args: Array[String]): Unit = {
 
     var nameEmp = ArrayBuffer[String]()
-    nameEmp += "Sevastyan"
-    nameEmp += "Mikhael"
-    nameEmp += "Igor"
-    nameEmp += "Nurbolat"
+    nameEmp += ("Sevastyan", "Mikhael", "Igor", "Nurbolat")
+
     var ssidEmp = ArrayBuffer[Int]()
-    ssidEmp += 1
-    ssidEmp += 2
-    ssidEmp += 3
-    ssidEmp += 4
+    ssidEmp += (1, 2, 3, 4)
+
     var designEmp = ArrayBuffer[String]()
-    designEmp += "Designer"
-    designEmp += "Manager"
-    designEmp += "Director"
-    designEmp += "Cleaner"
+    designEmp += ("Designer", "Manager", "Director", "Cleaner")
+
     var salaryEmp = ArrayBuffer[Float]()
-    salaryEmp += 120.300
-    salaryEmp += 80.220
-    salaryEmp += 250.300
-    salaryEmp += 12.300
+    salaryEmp += (120.300, 80.220, 250.300, 12.300)
 
     var choice: Int = 0
 
