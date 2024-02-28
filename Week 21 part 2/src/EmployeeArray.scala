@@ -5,21 +5,21 @@ object EmployeeArray {
   def main(args: Array[String]): Unit = {
 
     var nameEmp = ArrayBuffer[String]()
-    nameEmp += ("Sevastyan", "Mikhael", "Igor", "Nurbolat")
+    nameEmp += ("Sevastyan", "Mikhael", "Igor", "Nurbolat", "Aleksei")
 
     var ssidEmp = ArrayBuffer[Int]()
-    ssidEmp += (1, 2, 3, 4)
+    ssidEmp += (0, 1, 2, 3, 4, 5)
 
     var designEmp = ArrayBuffer[String]()
-    designEmp += ("Designer", "Manager", "Director", "Cleaner")
+    designEmp += ("Designer", "Manager", "Director", "Cleaner", "Prime Manager")
 
     var salaryEmp = ArrayBuffer[Float]()
-    salaryEmp += (120.300, 80.220, 250.300, 12.300)
+    salaryEmp += (120.300, 80.220, 250.300, 12.300, 89.7)
 
     var choice: Int = 0
 
     println("|===================Welcome!==================|")
-    while (choice != 5) {
+    while (choice != 6) {
 
       println("|=============================================|")
       println("|=============Employee Management=============|")
@@ -29,7 +29,8 @@ object EmployeeArray {
       println("2. Delete an Employee Record")
       println("3. Search Employee record by SSID")
       println("4. Calculate total salary based on designation")
-      println("5. Exit")
+      println("5. Show all available employers.")
+      println("6. Exit")
 
       print("Choose option: ")
       choice = readInt()
@@ -119,7 +120,19 @@ object EmployeeArray {
           print(s"\nYour total amount to be paid (with tax) is: $totalTaxSalary\n")
 
 
-        case 5 => println("Exiting...")
+        case 5 =>
+          println("Generate employee list?")
+          var choice = readBoolean()
+
+          if (choice) {
+            println("Name: " + nameEmp(0) + "\nSSID: " + ssidEmp(0) + "\nDesignation: " + designEmp(0) + "\nSalary: " + salaryEmp(0))
+            println("\nName: " + nameEmp(1) + "\nSSID: " + ssidEmp(1) + "\nDesignation: " + designEmp(1) + "\nSalary: " + salaryEmp(1))
+            println("\nName: " + nameEmp(2) + "\nSSID: " + ssidEmp(2) + "\nDesignation: " + designEmp(2) + "\nSalary: " + salaryEmp(2))
+            println("\nName: " + nameEmp(3) + "\nSSID: " + ssidEmp(3) + "\nDesignation: " + designEmp(3) + "\nSalary: " + salaryEmp(3))
+          } else {
+            print("Returning to main menu...")
+          }
+        case 6 => println("Exiting...")
         case _ => println("Invalid choice. Try again.")
       }
     }
