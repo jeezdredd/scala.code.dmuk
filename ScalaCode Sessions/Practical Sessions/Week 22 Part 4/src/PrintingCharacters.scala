@@ -1,25 +1,19 @@
-object PrintingNumbers {
+object PrintingCharacters {
   def main(args: Array[String]): Unit = {
 
     println("Using 'to':")
-    for (x <- 1 to 10) {
+    for (x <- 'A' to 'z') {
       print(x + " ")
     }
 
     println("\n\nUsing 'until':")
-    for (x <- 1 until 10) {
+    for (x <- 'a' until 'e') {
       print(x + " ")
     }
 
     println("\n\nUsing 'by':")
-    for (x <- 1 to 21 by 3) {
+    for (x <- 'a' to 'z' by 3) {
       print(x + " ")
     }
-
-    println("\n\nUsing 'by':")
-    for (x <- 10 to 1 by -1) {
-      print(x + " ")
-    }
-
   }
 }
