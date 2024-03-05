@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Week 22 Part 4/Lab Exercise 9/Lab Exercise 9.iml" filepath="$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Week 22 Part 4/Lab Exercise 9/Lab Exercise 9.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Practical Sessions.iml" filepath="$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Practical Sessions.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode IDE.iml" filepath="$PROJECT_DIR$/ScalaCode IDE.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Lab/ScalaCode Lab.iml" filepath="$PROJECT_DIR$/ScalaCode Lab/ScalaCode Lab.iml" />
