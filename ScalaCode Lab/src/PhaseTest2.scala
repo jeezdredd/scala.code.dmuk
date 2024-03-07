@@ -43,36 +43,36 @@ object PhaseTest2 {
     }
 
     //ARRAY ITERATION UNTIL < SIZE OF ARRAY:
-      var nums = new Array[Int](10)
-      var i = 0
+    var nums = new Array[Int](10)
+    var i = 0
 
-      while (i < nums.length) {
-        nums(i) = i + 1
-        i += 1
-      }
+    while (i < nums.length) {
+      nums(i) = i + 1
+      i += 1
+    }
 
-      print(i)
+    print(i)
 
     //DYNAMIC ARRAY SIZE SUPPORT (entered by user):
-      print("Enter size of array: ")
-      var size = readInt()
-      var nums = new Array[Int](size)
-      var i = 0
+    print("Enter size of array: ")
+    var size = readInt()
+    var nums = new Array[Int](size)
+    var i = 0
 
-      while (i < nums.length) {
-        println(nums(i))
-        i += 1
-      }
+    while (i < nums.length) {
+      println(nums(i))
+      i += 1
+    }
 
     //ACCESSING AND PRINTING EACH ELEMENT IN THE ARRAY :
-      var fruit = Array("apple", "pear", "banana", "grape")
+    var fruit = Array("apple", "pear", "banana", "grape")
 
-      var i = 0
+    var i = 0
 
-      while (i < fruit.length) {
-        println(fruit(i).toUpperCase())
-        i += 1
-      }
+    while (i < fruit.length) {
+      println(fruit(i).toUpperCase())
+      i += 1
+    }
 
 
     //REPRESENTATION OF THE MULTI DIMENSIONAL ARRAYS (printing 0):
@@ -124,12 +124,12 @@ object PhaseTest2 {
     }
 
     //Character filter (if UpperCase):
-      print("Enter character sequence: ")
-      var sentence: String = readLine()
+    print("Enter character sequence: ")
+    var sentence: String = readLine()
 
-      for (letter <- sentence if letter.isUpper) {
-        println(letter)
-      }
+    for (letter <- sentence if letter.isUpper) {
+      println(letter)
+    }
 
     //Integer sequence (excluding 5):
     for (x <- 1 to 10 if x != 5) {
@@ -137,8 +137,8 @@ object PhaseTest2 {
     }
 
     //Yield statement usage:
-      val arr = Array[Int](1, 2, 3, 4, 5)
-      var result = for (x <- arr) yield x*x
+    val arr = Array[Int](1, 2, 3, 4, 5)
+    var result = for (x <- arr) yield x * x
 
     //Yield statement usage
     with two string :
