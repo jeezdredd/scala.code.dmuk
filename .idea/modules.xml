@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../ASCII graphics library/ASCII graphics library.iml" filepath="$PROJECT_DIR$/../../../../ASCII graphics library/ASCII graphics library.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Lab Exercise 12/Lab Exercise 12.iml" filepath="$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Lab Exercise 12/Lab Exercise 12.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Week 22 Part 4/Lab Exercise 9/Lab Exercise 9.iml" filepath="$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Week 22 Part 4/Lab Exercise 9/Lab Exercise 9.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Practical Sessions.iml" filepath="$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Practical Sessions.iml" />
@@ -15,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/Week 21 part 2/Scala Lab Exercize 6/Week 21 part 3.iml" filepath="$PROJECT_DIR$/Week 21 part 2/Scala Lab Exercize 6/Week 21 part 3.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Week 22 Part 4/Week 22 Part 4.iml" filepath="$PROJECT_DIR$/ScalaCode Sessions/Practical Sessions/Week 22 Part 4/Week 22 Part 4.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaCode Lab/Week 23 part 5/Week 23 part 5.iml" filepath="$PROJECT_DIR$/ScalaCode Lab/Week 23 part 5/Week 23 part 5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week 25 part 2/Week 25 part 2.iml" filepath="$PROJECT_DIR$/Week 25 part 2/Week 25 part 2.iml" />
     </modules>
   </component>
 </project>
